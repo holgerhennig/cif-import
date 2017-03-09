@@ -12,6 +12,7 @@ numpy
 math
    $ pip install math
 
+
 Use
 ============
 Imaging flow cytometry (IFC) instruments by Millipore generate cif files, which contain images and metadata. This module reads image data from cif files into a tensor in python. Optionally the images are padded and cropped such that they have the same dimensions. The image data in the tensor can then readily be fed, e.g., into deep learning networks such as convolutional neural netowrks.
@@ -20,3 +21,10 @@ Imaging flow cytometry (IFC) instruments by Millipore generate cif files, which 
 import ifc
 filelist = ['blasts.cif', 'normal.cif']
 T = ifc.read_cif(filelist)
+
+Use
+===
+
+  $ python stitching -o path/to/OUTPUT_DIRECTORY path/to/IMAGE
+
+Generates
