@@ -1,6 +1,6 @@
 cif-reader
 ============
-This module reads image data from imaging flow cytometry data files (.cif files) into a tensor in python.
+This module reads images from imaging flow cytometry data files (.cif files) into a tensor in python.
 
 Requirements
 ============
@@ -23,7 +23,7 @@ math
 
 Use
 ============
-Imaging flow cytometry (IFC) instruments by Millipore generate compensated image files (.cif files), which contain images and metadata. This module reads image data from cif files into a tensor in python. Optionally the images are padded and cropped such that they have the same dimensions. The image data in the tensor can then readily be fed, e.g., into deep learning networks such as convolutional neural netowrks.
+Imaging flow cytometry (IFC) instruments by Millipore generate compensated image files (.cif files), which contain images and metadata. This module reads images from cif files into a tensor in python. Optionally the images are padded and cropped such that they have the same dimensions. The image data in the tensor can then readily be fed, e.g., into deep learning networks such as convolutional neural netowrks.
 
 read images from cif files into tensor T:
 
