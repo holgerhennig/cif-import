@@ -17,6 +17,7 @@ javabridge
 
 numpy
   $ pip install numpy
+
 math
   $ pip install math
 
@@ -27,7 +28,9 @@ Imaging flow cytometry (IFC) instruments by Millipore generate cif files, which 
 read images from cif files into tensor T:
 
   $ import ifc
+
   $ filelist = ['blasts.cif', 'normal.cif']
+
   $ T = ifc.read_cif(filelist)
 
 
