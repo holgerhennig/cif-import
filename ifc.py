@@ -18,7 +18,7 @@ import math
 #javabridge.start_vm(class_path=bioformats.JARS, max_heap_size='8G')
 
 # read cif files
-def read_cif(filelist, channels=range(1,12), pad=1, classes=0, verbose=0):
+def read_cif(filelist, channels=range(0,12), pad=1, classes=0, verbose=0):
     print "Reading image data from cif file into numpy tensor."
     
     # set default parameters    
